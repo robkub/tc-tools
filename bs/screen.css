@@ -1,0 +1,242 @@
+body {
+	background-color: #222222;
+	background-image: url(images/bg2.jpg);	
+}
+body, table {
+	font-family: Verdana, Tahoma, "DejaVu Sans", Arial, sans-serif;
+	font-size: 10pt;
+}
+#container {
+	margin: 0.8em auto;
+	width: 940px;
+}
+#header {
+	background-image: url(images/header.jpg);
+	height: 180px;	
+}
+#content {
+	background-image: url(images/bgmiddle.jpg);
+	padding: 0.5em 1.2em;
+}
+#top-frame,
+#bottom-frame {
+	clear: both;
+	height: 10px;
+}
+#top-frame {
+	background-image: url(images/bgtop.jpg);
+}
+#bottom-frame {
+	background-image: url(images/bgbottom.jpg);
+	background-position: bottom;
+}
+#footer {
+	clear: both;
+	background-image: url(images/header2.jpg);
+	height: 50px;
+	line-height: 50px;
+	text-align:center;
+	vertical-align: middle;
+	color: #FFF;	
+}
+#content h1 {
+	margin: 0;
+}
+#content .error,
+#content .success {
+	border: 0.2em solid #FFF;
+	padding: 0.3em;
+}
+#content .error {
+	border-color: rgba(196, 64, 64, 0.75);
+	background-color:  rgba(196, 64, 64, 0.25);
+}
+#content .success {
+	border-color: rgba(64, 196, 64, 0.75);
+	background-color: rgba(64, 196, 64, 0.25);
+}
+
+
+#round-select {
+	float: left;
+	 width: 12em;
+}
+#allies {
+	margin-left: 12.3em;
+}
+
+a:link {
+	color:black;
+}
+a:visited {
+	color:#111151;
+}
+a:hover {
+	color:#414171;
+}
+a:active {
+	color:#616191;
+}
+
+.hide {
+	display: none;	
+}
+.clearer {
+	clear: both;
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+form div.buttons {
+	text-align: center;
+}
+
+.box {
+	background-color: rgba(128,128,128, 0.75);
+}
+
+#round-select h2 {
+	font-size: 1.2em;	
+}
+#allies .ally {
+	margin: 0.3em 0;
+	border: 2px solid #000;
+}
+#allies .ally .name {
+	float: left;
+	width: 30em;
+}
+#allies .ally .rounds {
+	float: right;
+}
+#allies .ally .banner {
+	margin-top: 2em;
+	border-top: inherit;
+	border-top-width: 1px;
+}
+#allies .ally div {
+	padding: 0.2em;
+}
+#allies .ally .desc {
+	display:none;
+}
+
+/* editpage */
+tr.alternate {
+	background-color: rgba(0,0,0,0.25);
+}
+
+table#allyOverview {
+	margin: 0 auto;
+	width: 99%;
+	border: 0.2em solid #000;
+	border-spacing: 0;
+}
+table#allyOverview thead {
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.75);
+}
+table#allyOverview td,
+table#allyOverview th {
+	padding: 0.2em;
+}
+
+legend {
+	font-size: 1.3em;
+}
+.tabsfield h3 {
+	margin: 0;
+	margin-top: 0.3em;
+	font-size: 1.1em;
+}
+.tabs {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.tabs span,
+.tabs label{
+	cursor: pointer;
+}
+
+.tabs span,
+.tabs > label {
+	color: #FFFFFF;
+	padding: 4px 10px;
+	background-color: rgba(0,0,0,0.5);
+}
+.tabs span.selected,
+.tabs > label.selected {
+	background-color: #000000;
+}
+.tabs span:hover,
+.tabs > label:hover {
+	border: 2px solid #000000;
+	padding: 2px 8px;
+	border-bottom: none;
+	padding-bottom: 4px;
+}
+
+.tabsfield {
+	margin-top: 4px;
+	padding: 5px;
+	border: 2px solid #000000;
+}
+
+.select {
+	background-color: rgba(128,128,128, 1);
+	border: 3px inset #000000;	
+}
+.select label{
+	text-align: center;
+	padding: 3px;	
+}
+.select div.empty {
+	font-style: italic;
+		
+}
+.select label.option {
+	display: block;	
+	background-color: rgba(255,255,255, 0.1);
+	border: 1px #444 solid;
+	float: left;
+}
+.select label.option {
+}
+.select label.option:hover {
+	background-color: rgba(0,0,0, 0.1);
+}
+.select label.option.selected {
+	background-color: rgba(255,255,255, 0.9);
+}
+.select label.option input {
+	display: none;
+}
+fieldset.banner .select .option img{
+	width: 50px;
+	height: 20px;
+}
+fieldset.runden .select .option {
+	width: 9%;
+}
+
+#messages > div.del-message {
+	width: 4em;
+	float: right;
+}
+#messages > div.message,
+#content > div.message {
+	margin: 0.5em;
+	border: 0.2em solid rgba(196, 196, 196, 0.75);
+	background-color: rgba(196, 196, 196, 0.25);
+	margin-right: 4em;
+}
+#messages > div.message > p,
+#content > div.message > p {
+	margin: 0;
+	padding: 0.2em;
+}
+#messages > div.message > p.head,
+#content > div.message > p.head {
+	background-color: rgba(196, 196, 196, 0.75);
+	border-bottom: inherit;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Kampfrechner</title>
+		<link rel="stylesheet" type="text/css" href="kampfrechner.css" />
+		<script type="text/javascript" src="http://keksmafia.de/lib-js/jquery.js"></script>
+		<script type="text/javascript" src="http://keksmafia.de/lib-js/jquery.json.min.js"></script>
+		<script type="text/javascript" src="http://keksmafia.de/lib-js/javascript.ext.js"></script>
+		<script type="text/javascript" src="kampfrechner.class.js"></script>
+		<script type="text/javascript" src="kampfrechner.config.js"></script>
+		<script type="text/javascript" src="kampfrechner.ui.js"></script>
+		<script type="text/javascript">
+		<!--
+			// for(i in Einheit.prototype.__reg) document.write("<p>"+ Einheit.prototype.__reg[i].toHTML() +"</p>"); // Debug
+
+			$(function() {
+				var kampf = new Kampf();
+				if(window.location.parameters["kampf"]) {
+					var par = window.location.parameters["kampf"];
+					if(par.match(/\"/gi));
+						par = par.replace(/\\"/gi, "\"");
+					kampf.fromJSON(par);
+					kampftabelle($("#kampf"), clone(kampf));
+				}
+				createKampfForm($("div#firstInput"), 0, kampf);
+			});
+		// -->
+		</script>
+	</head>
+	<body>
+		<h1 id="title">Kampfrechner</h1>
+		<div id="content">
+			<h2>Info</h2>
+			<p id="info">
+				Diese Seite simuliert einen Kampf bei TheCrown. Gebt die beiden Armeen an und klickt auf <i>Berechnen</i>. Seht diese Seite nur als Entscheidungshilfe, ob sich ein Angriff lohnt. Es arbeitet nicht genauso wie das original Kampfscript von The Crown.<br />
+				Wollt ihr mehr über das Kampfscript erfahren, <a href="http://tc-wiki.keksmafia.de">lest das wiki.</a>
+			</p>
+			<p class="attention">JavaScript muss aktiviert sein.</p>
+			<div id="firstInput">
+				<h2>Formular</h2>
+			</div>
+			<div id="kampf">
+			</div>
+		</div>
+		<div id="footer">
+			Autoren: Goliath und yqv1
+		</div>
+	</body>
+</html>

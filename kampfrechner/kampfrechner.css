@@ -1,0 +1,115 @@
+body {
+	background-color: rgb(216, 216, 196);
+	background-image: url(../bg.jpg);
+	margin: 0;
+}
+body, th, td {
+	font-family: Verdana, 'Dejavu Sans', Arial, sans-serif;
+	font-size: 10pt;
+}
+h1#title {
+	background-color: rgba(255, 255, 164, 0.25);	
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+div#content {
+	background-color: rgba(216, 216, 216, 0.5);	
+	border: 0.5em solid rgba(255, 255, 255, 0.25);
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	margin: 0 1em;
+}
+div#content p,
+div#content fieldset {
+	margin: 0.3em;
+	padding: 0.2em;
+}
+div#content h1, div#content h2, div#content h3, div#content h4, div#content h5 {
+	margin: 0.1em;
+	padding: 0.2em;
+}
+div#footer {
+	color: rgba(216, 216, 216, 0.65);	
+	clear: both;
+	margin: 0 2em;
+	text-align: right;
+}
+
+table {
+	background-color: rgba(255, 255, 255, 0.75);
+	border: 0.3em solid rgba(0, 0, 0, 0.25);
+	border-collapse: collapse;
+	margin: 0.5em;
+}
+table > *,
+table > * > *,
+table > * > tr > * {
+	border: inherit;
+	border-width: 0.1em;
+	
+}
+table > tr > *,
+table > * > tr > * {
+	padding: 0.3em;
+}
+table > tbody > tr > th {
+	background-color: rgba(255, 255, 196, 0.25);
+	text-align: left;
+}
+table thead th {
+	text-align: center;
+}
+table thead tr,
+table tfoot tr {
+	background-color: rgba(255, 255, 196, 0.75);
+}
+table tfoot td {
+	text-align: center;
+}
+
+td.zahl,
+td.zahl > input {
+	text-align: right;
+}
+
+/* Kampfformular */
+table.kampfform {
+	background-color: rgba(196, 196, 255, 0.75);	
+}
+table.kampfform tbody  input {
+	width: 5em;
+	margin-right: 1em;
+}
+table.kampfform tr.moral input {
+	margin-right: 0;
+}
+
+/* Kampftabelle */
+table.kampftabelle > tfoot tr > * {
+	border-top-width: 0.3em;
+	background-color: rgba(196, 64, 64, 0.75);
+}
+table.kampftabelle tbody th,
+table.kampftabelle tfoot th {
+	border-right-width: 0.3em;
+}
+table.kampftabelle > thead th.angreifer {
+	background-color: rgba(196, 64, 64, 0.5);
+	border-top: none;
+	border-bottom-width: 0.3em;
+}
+table.kampftabelle > thead th.verteidiger {
+	background-color: rgba(64, 196, 64, 0.5);
+	border-bottom-width: 0.3em;
+}
+table.kampftabelle > tbody td.angreifer {
+	background-color: rgba(196, 128, 128, 0.5);
+}
+table.kampftabelle > tbody td.verteidiger {
+	background-color: rgba(128, 196, 128, 0.5);
+}
+table.kampftabelle tr.highlight {
+	background-color: rgba(255, 255, 255, 0.9);
+}

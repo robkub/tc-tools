@@ -4,7 +4,7 @@ Dieses Repository vereinigt alle von mir erstellten oder mit jemand anderes zusa
 
 ## Zustand
 
-Viele der Tools sind nicht sehr gut dokumentiert, für Fragen hinsichtlich der Funktionsweise bin ich jederzeit erreichbar unter webmaster@keksmafia.de. Für gewonnene Erkenntnisse bin ich über Honzufügen von Kommentaren dankbar
+Viele der Tools sind nicht sehr gut dokumentiert, für Fragen hinsichtlich der Funktionsweise bin ich jederzeit erreichbar unter webmaster@keksmafia.de. Für gewonnene Erkenntnisse bin ich über Hinzufügen von Kommentaren dankbar
 
 ## Übersicht
 

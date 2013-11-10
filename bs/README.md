@@ -13,19 +13,22 @@ Funktiomniert sicher mit
 ## Installation
 
 1. Kopiere alle Dateien in das Webserver-Verzeichnis
-2. Füge das Sql-Skript "schema.sql" im Mysql-Server aus
+2. Führe das Sql-Skript "schema.sql" in der mysql-Datenbank aus
 3. Gebe in "lib/connect.php" die Zugangsdaten zur MySQL-Datenbank an
-  * "lib/constants.php" sollte nicht angepasst werden
-4. Füge ein Verzeichnisschutz zum Verzeichnis "admin" hinzu
-
+   * "lib/constants.php" sollte nicht angepasst werden
+4. Füge ein Verzeichnisschutz zum Verzeichnis "admin" hinzu.  
    Siehe [Apache Doc](http://httpd.apache.org/docs/2.2/howto/auth.html)
    
-   * Gehe zu *http://host/admin/edit.php* für Administration
+   * Gehe zu *http://host/admin/edit.php* für die Administration
 
-5. Achte darauf das alle Schreibrechte auf das Verzeichnis "pics" haben
+5. Achte darauf das alle Schreibrechte (0666 oder 0777) auf das Verzeichnis "pics" haben
 
 ## Daten
 
-Siehe *Downloads* für Daten.
+Siehe *../data* für Daten.
 
+## Beitragende (vor release auf github)
 
+* *Smoke-a-lot* - Initiale Idee und Umsetzung
+* *Lord_Bloodwin* - Design
+* *robkub* - Erweiterung der Implementierung
